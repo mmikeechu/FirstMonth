@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Typography - Ace Admin</title>
+
+		<meta name="description" content="This is page-header (.page-header &gt; h1)" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<link rel="stylesheet" href="assets/css/prettify.css" />
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="assets/css/ace-fonts.css" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-heart red"></i>
+							M&M's
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">					
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" width="32px" height="32px" src="assets/images/gallery/avatar.jpg" alt="Micah's Photo" />
+								<span class="user-info">
+									<small>I love you, </small>
+									Micah!
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				<div class="sidebar" id="sidebar">
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+					</script>
+
+					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+							<button class="btn btn-success">
+								<i class="icon-signal"></i>
+							</button>
+
+							<button class="btn btn-info">
+								<i class="icon-pencil"></i>
+							</button>
+
+							<button class="btn btn-warning">
+								<i class="icon-group"></i>
+							</button>
+
+							<button class="btn btn-danger">
+								<i class="icon-cogs"></i>
+							</button>
+						</div>
+
+						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+							<span class="btn btn-success"></span>
+
+							<span class="btn btn-info"></span>
+
+							<span class="btn btn-warning"></span>
+
+							<span class="btn btn-danger"></span>
+						</div>
+					</div><!-- #sidebar-shortcuts -->
+
+					<ul class="nav nav-list">
+						<li>
+							<a href="home.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> Home </span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="weekly.html">
+								<i class="icon-book"></i>
+								<span class="menu-text"> Recap </span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="photos.html">
+								<i class="icon-camera"></i>
+								<span class="menu-text"> Moments </span>
+							</a>
+						</li>
+						
+						<li class="active">
+							<a href="message.html">
+								<i class="icon-heart"></i>
+								<span class="menu-text"> For You </span>
+							</a>
+						</li>
+							</ul>
+						</li>
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+							<li class="active">Message</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								Happy Monthsary, Baby!
+								<small>
+									<i class="icon-double-angle-right"></i>
+									This is my letter for you today! <3
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+								<div class="row">
+									<div class="col-sm-6">
+										<h4>I love my girlfriend! <3</h4>
+
+										<hr />
+										<h1>Micah Michelle, </h1>
+										<p>
+											I've never been so excited for a monthsary like this. I'm so so excited to celebrate our first month together as a couple, you've been definitely the best blessing to my 2014! :") You're definitely the one I've been wishing for. I know I already told you this a long time ago but I've had the biggest crush on you ever since I saw you and until now you're still the most beautiful, the cutest, and sexiest girl for me! <3 There's nothing more I can ask for! I'm so excited for the future knowing that we will be spending it together and we will be working together to make our relationship work and last the test of time! Baby, I know I'm not the perfect boyfriend but I'm trying to be perfect for you because I don't want you to leave, I want you to be my lover for life! There is no one else I'd rather spend my life with than you! <br><br><center><img src="assets/images/gallery/21.jpg" width="275px" height="275px"></img></center><br><br> I'm so thankful that we have one month in the books, I cant wait for the future, I mean this is just our first month and we've already done so much together, just like fine wine, I know our relationship will get even better as time passes. Remember baby, we won't have any stages, we will always stay in love with one another forever, I'll make sure that happens. :D Let's work together on that okay? I'm so happy with our relationship and that we get to do everything both want together! > :*** < Yung tipo na kahit grocery or manood ng movie sa kwarto, maglaro ng video games together, mag prepare ng food, at mag ikot ikot kung saan saan nagagawa natin lahat yun together and okay lang satin parehas! We also have the best conversations when we're both telling stories or just debating about anything, I find it so cute. :") <br><br><center><img src="assets/images/gallery/20.jpg" width="275px" height="275px"></img></center><br><br> Baby ko, I know its just one month but I know this is another stepping stone towards our ultimate goal of loving each other forever! Sobrang swerte ko talaga sayo! <3 I also know that you'll be busy for the next two months, baby, I'll do my best to help you with your review for your boards, I don't want to stress you or add to your stress, I promise I'll behave and I'll try to relieve you of your stress when we're together. I'll always be praying and always be here to support you my girlfriend! I know this is for our future! I can't wait for the future, lets enjoy our present! I love you so much forever, baby! > :*** < You're the only one I want, the only one I'll ever need, and the only one I'll love! Thank you for always making me happy and for always being here! Baby love, happy happy first monthsary to us! Let's celebrate this and enjoy, our love will have no end. I'm super super super in love with you! Forever and a day, baby! > :**** < <br><br><p class="lead"><i>P.S. I hope you like the way I did my monthsary surprise for you, its something I've never done and something I've only learned doing just recently, I hope you appreciate it baby, please know I tried my best and only wanted to make you happy in making this app, I love you so much! <3</i></p> 
+										</p>
+										<h2>Love, <br>Mikee Villegas</h2>										
+									</div><!-- /span -->									
+								</div>
+
+								<hr />
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="widget-box">
+											<div class="widget-header widget-header-flat">
+												<h4 class="smaller">
+													<i class="icon-quote-left smaller-80"></i>
+													Quotes
+												</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row">
+														<div class="col-xs-12">
+															<blockquote class="pull-right">
+																<p>"I'll never look for anyone else, you're all I'll ever want, all I'll ever need, and the only one I'll love forever!"</p>
+
+																<small>
+																	Mikee
+																	<cite title="Source Title">Villegas</cite>
+																</small>
+															</blockquote>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="col-xs-12">
+															<blockquote>
+																<p>Happy First Monthsary, Baby Love! :**</p>
+
+																<small>
+																	Till the next
+																	<cite title="Source Title">one </cite>
+																</small>
+															</blockquote>
+														</div>
+													</div>
+
+													<hr />													
+												</div>
+											</div>
+										</div>
+									</div>
+
+									</div>
+								</div><!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+				<div class="ace-settings-container" id="ace-settings-container">
+					<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+						<i class="icon-cog bigger-150"></i>
+					</div>
+
+					<div class="ace-settings-box" id="ace-settings-box">
+						<div>
+							<div class="pull-left">
+								<select id="skin-colorpicker" class="hide">
+									<option data-skin="default" value="#438EB9">#438EB9</option>
+									<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+									<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+									<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+								</select>
+							</div>
+							<span>&nbsp; Choose Skin</span>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+							<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+							<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+							<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+							<label class="lbl" for="ace-settings-add-container">
+								Inside
+								<b>.container</b>
+							</label>
+						</div>
+					</div>
+				</div><!-- /#ace-settings-container -->
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<script src="assets/js/prettify.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			jQuery(function($) {
+			
+				window.prettyPrint && prettyPrint();
+				$('#id-check-horizontal').removeAttr('checked').on('click', function(){
+					$('#dt-list-1').toggleClass('dl-horizontal').prev().html(this.checked ? '&lt;dl class="dl-horizontal"&gt;' : '&lt;dl&gt;');
+				});
+			
+			})
+		</script>
+	</body>
+</html>

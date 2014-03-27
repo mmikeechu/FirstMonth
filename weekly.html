@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>UI Elements - Ace Admin</title>
+
+		<meta name="description" content="Common UI Features &amp; Elements" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery.gritter.css" />
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="assets/css/ace-fonts.css" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<style>
+			.spinner-preview {
+				width:100px;
+				height:100px;
+				text-align:center;
+				margin-top:60px;
+			}
+			
+			.dropdown-preview {
+				margin:0 5px;
+				display:inline-block;
+			}
+			.dropdown-preview  > .dropdown-menu {
+				display: block;
+				position: static;
+				margin-bottom: 5px;
+			}
+		</style>
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-heart red"></i>
+							M&M's
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">						
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" width="32px" height="32px" src="assets/images/gallery/avatar.jpg" alt="Micah's Photo" />
+								<span class="user-info">
+									<small>Happy Monthsary, </small>
+									Micah!
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				<div class="sidebar" id="sidebar">
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+					</script>
+
+					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+							<button class="btn btn-success">
+								<i class="icon-signal"></i>
+							</button>
+
+							<button class="btn btn-info">
+								<i class="icon-pencil"></i>
+							</button>
+
+							<button class="btn btn-warning">
+								<i class="icon-group"></i>
+							</button>
+
+							<button class="btn btn-danger">
+								<i class="icon-cogs"></i>
+							</button>
+						</div>
+
+						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+							<span class="btn btn-success"></span>
+
+							<span class="btn btn-info"></span>
+
+							<span class="btn btn-warning"></span>
+
+							<span class="btn btn-danger"></span>
+						</div>
+					</div><!-- #sidebar-shortcuts -->
+
+					<ul class="nav nav-list">
+						<li>
+							<a href="home.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> Home </span>
+							</a>
+						</li>
+						
+						<li class="active">
+							<a href="weekly.html">
+								<i class="icon-book"></i>
+								<span class="menu-text"> Recap </span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="photos.html">
+								<i class="icon-camera"></i>
+								<span class="menu-text"> Moments </span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="message.html">
+								<i class="icon-heart"></i>
+								<span class="menu-text"> For You </span>
+							</a>
+						</li>
+							</ul>
+						</li>
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>							
+							<li class="active">Weekly Recap</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								Weekly Recap
+								<small>
+									<i class="icon-double-angle-right"></i>
+									Our Relationship So Far! Super Awesome! :")
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+								<div class="row">
+									<div class="col-sm-6">
+										<h3 class="row header smaller lighter blue">
+											<span class="col-xs-6"> My Love! <3 </span><!-- /span -->											
+										</h3>
+
+										<div id="accordion" class="accordion-style1 panel-group">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+															<i class="icon-angle-down bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
+															&nbsp;Week 1 (<i>March 1 - March 7</i>)
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseOne">
+													<div class="panel-body">
+														<img src="assets/images/gallery/1.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/2.jpg" width="150px" height="150px"></img><br><br>Our first week together and a whole lot has happened already, really really memorable first week for us don't you think, baby? For the first time in my life, I have been so excited about the future especially since now, its with you. I'm even more excited to wake up than to sleep because reality is definitely better than my dreams now. Plus, we get to spend a whole lot of time together too. <3 So, on our first day as a couple, we went out on a date, we got to tell my mom that we're now official! LOL we played Left 4 Dead and had an awesome time in my house! ;) :") Then we also got to eat Mexicali and Cold Stone! Nothing better talaga! Then the next day, I got to introduce you to my cousins in Project 4! :") Ang bilis talaga, super fun! <3 Then, we had dinner with my parents pa before I brought you home! ;) Saya diba? First two days pa lang yun!<br><br><img src="assets/images/gallery/3.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/4.jpg" width="150px" height="150px"></img><br><br> The next day we'd be together would be Wednesday, that was the day you brought me that yummy salad and the Yema Cake! Super thank you for that baby! Coffee Place tayo tapos next day, nag Zarks tayo! Sobrang dami ko nakain that time pero ang galing dahil naubos mo yung burger mo! Kakainlove talaga girlfriend ko! :) Nung Friday and Saturday naman, we watched Book Thief sa Coffee Place tapos we got to try Exile na then, Project Pie, Jamba, and then Project 4 for Kuya Jerwin's birthday celebration! What a first week if you ask me! You really make me feel so loved! <3 <br><br> <center><span class="btn btn-danger btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title="<i class='icon-heart red'></i> Hihi!" data-content="I love you so much, baby love! <3">Press Me!</span></center>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+															<i class="icon-angle-right bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
+															&nbsp;Week 2 (<i>March 8 - March 14</i>)
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseTwo">
+													<div class="panel-body">
+														<img src="assets/images/gallery/5.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/6.jpg" width="150px" height="150px"></img><br><br>Ay kasama pala dito yung Project Pie dapat! Anyway, super memorable sakin talaga nung Project Pie kasi super gusto natin itry yun together and we got to do it agad together, ang saya lang pero masmasarap talaga yung gawa mong Pizza but masarap naman parehas babe! :) I went to you nung Monday I just wanted to bring you Starbucks and that Banoffee Pie that you've been craving also as a sorry na rin, diba? :) Tapos nung Wednesday naman, that was the first time you wrote me a note! Super kinilig ako nun kasi may matching Iced Gems pa baby! <3 <br><img src="assets/images/gallery/7.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/8.png" width="150px" height="150px"></img><br><br> We got to go to my place also and play billiards for real! :") Sana naturuan kita! Super saya pa kasi nakabilliards nga din tayo! <3 ;) Tapos the next day we got to try Dakasi plus Chomp Chomp, super masaya din tayo nun kasi nga we got to talk a lot of pictures together lalo na sa Dakasi, maganda din kasi lighting dun eh tapos yung Chomp Chomp masarap din naman pero ang bilis ko nabusog kasi daming noodles! Then nung Friday, nag ERSAO tayo kasama sila Justin at Julian! I'm glad we got to hang out with my brothers and nakasama kita kahit na napadaan lang naman kami sa Taft! Thanks, baby! <3 Second week has just been as awesome as the first! Let's keep it up! <3 :* <br><br><center><span class="btn btn-warning btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title="<i class='icon-heart red'></i> Baby!!" data-content="Thank you for the Iced Gems, I can't wait to play billiards again, love! ;)">Hey Baby! </span></center>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+															<i class="icon-angle-right bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
+															&nbsp;Week 3 (<i>March 15 - March 21</i>)
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseThree">
+													<div class="panel-body">
+														<img src="assets/images/gallery/9.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/10.jpg" width="150px" height="150px"></img><br><br>Third week into our relationship and it started out great, baby! We got to have dinner with your siblings! It was really awesome to get to meet the rest of them, ang fun nila kasama and masiyahin sila lahat, they all seem like really amazing people to get to know, just like you! <3 Super busog ako nung gabi na yun, dami natin food kasi baby eh! Thank you for bringing me there and baby, thank you for staying up din and going to Starbucks with me! Sorry I couldn't be with you on Sunday kasi nga we had to prepare for our final defense na. :D Monday was the first day that I actually got to go inside your condo, thanks for having me there baby naglunch pa tayo nung Adobo and gumawa pa ikaw ng Smores! <3 Sarap! Tapos pasado pa kami ng thesis! Yay! ;) <br><br><img src="assets/images/gallery/11.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/12.jpg" width="150px" height="150px"></img><br><br> Nung Wednesday naman, haha, that super sayang moment! Super crave pa naman tayo, dibali, good things come to those who wait naman day eh diba baby? :* At least we got to eat BonChon! Then nung Friday, sa wakas pinagbigyan mo din ako at nakapag Army-Navy din tayo baby tapos naka pag grocery pa tayo together, we spent almost the whole day together and we did just regular things pero still super masaya pa rin ako kasi kahit na those things we can still do together! <3 We got to try Yin Nan din, best Wanton I've had in a while, super saya ko this week kasi baby we got to spend a lot of time together plus dami natin nagawa na firsts together! Thank youuu! I love you so much!! > :*** < <br><br><center><span class="btn btn-success btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title="<i class='icon-heart red'></i> Hihi, kilig baby! <3" data-content="I still love you more though! I love you super super super much! > :*** < ">Press if you love mmikeechu! </span></center>
+													</div>
+												</div>
+											</div>
+											
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+															<i class="icon-angle-right bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
+															&nbsp;Week 4 (<i>March 22 - March 28</i>)
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseFour">
+													<div class="panel-body">
+														<img src="assets/images/gallery/13.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/14.jpg" width="150px" height="150px"></img><br><br>March 22, the most epic date in all of dates! We got to do so much, we went to Pink Sisters together, then we had the most epic picnic experience in Picnic Grove, sayang hindi pa umabot yung monopod baby ko! :)) But still, we got to experience so many firsts, baby! We made the food pa, super sarap and super fun! <3 That was the most fun I had in a long while, thank you baby and I'll never forget that kasi first time ko din dun tapos kasama ko pa ikaw almost the whole day then we got to swim together pa with my cousins! <3 What a happy day! I noticed something, I really swimming with you because super saya mo kasama lang talaga basta and baby, thank you for introducing my cousins and I dun sa game na tinuro mo, we had fun! LOL There's nothing else I can say but you're really the best girlfriend!! <3<br><br><img src="assets/images/gallery/15.jpg" width="150px" height="150px"></img><img src="assets/images/gallery/16.jpg" width="150px" height="150px"></img><br><br> I'm so in love with you so much! :") There is no doubt that I want forever with you! I'll do my best to be the best boyfriend for you and I promise I'll take care of you! <3 Monday, we got to have lunch together kahit yun lang sobrang masaya ako dahil nakasama pa rin kita and we had dessert naman together! <3 Baby, I won't look for anyone else, you're all I want, you're all I'll ever need! Remember that! I LOVE YOU TO THE MOON AND BACK FOREVER AND EVER, Baby love! <3 > :**** < I'm so in love with you!! :") <3 <br><br><center><span class="btn btn-primary btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title="<i class='icon-heart red'></i> Our First Monthsary" data-content="That first month went by so fast no baby? We're the sweetest and best couple talaga! I love you forever and I can't wait for more months then years with you! :***">Today is... </span></center>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- /span -->
+
+									
+								</div><!-- /row -->
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+				<div class="ace-settings-container" id="ace-settings-container">
+					<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+						<i class="icon-cog bigger-150"></i>
+					</div>
+
+					<div class="ace-settings-box" id="ace-settings-box">
+						<div>
+							<div class="pull-left">
+								<select id="skin-colorpicker" class="hide">
+									<option data-skin="default" value="#438EB9">#438EB9</option>
+									<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+									<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+									<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+								</select>
+							</div>
+							<span>&nbsp; Choose Skin</span>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+							<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+							<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+							<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+							<label class="lbl" for="ace-settings-add-container">
+								Inside
+								<b>.container</b>
+							</label>
+						</div>
+					</div>
+				</div><!-- /#ace-settings-container -->
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/bootbox.min.js"></script>
+		<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="assets/js/jquery.gritter.min.js"></script>
+		<script src="assets/js/spin.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				/**
+				$('#myTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				  console.log(e.target.getAttribute("href"));
+				})
+				*/
+			
+			
+				$('#accordion-style').on('click', function(ev){
+					var target = $('input', ev.target);
+					var which = parseInt(target.val());
+					if(which == 2) $('#accordion').addClass('accordion-style2');
+					 else $('#accordion').removeClass('accordion-style2');
+				});
+			
+			
+				var oldie = /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase());
+				$('.easy-pie-chart.percentage').each(function(){
+					$(this).easyPieChart({
+						barColor: $(this).data('color'),
+						trackColor: '#EEEEEE',
+						scaleColor: false,
+						lineCap: 'butt',
+						lineWidth: 8,
+						animate: oldie ? false : 1000,
+						size:75
+					}).css('color', $(this).data('color'));
+				});
+			
+				$('[data-rel=tooltip]').tooltip();
+				$('[data-rel=popover]').popover({html:true});
+			
+			
+				$('#gritter-regular').on(ace.click_event, function(){
+					$.gritter.add({
+						title: 'This is a regular notice!',
+						text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="blue">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+						image: $path_assets+'/avatars/avatar1.png',
+						sticky: false,
+						time: '',
+						class_name: (!$('#gritter-light').get(0).checked ? 'gritter-light' : '')
+					});
+			
+					return false;
+				});
+			
+				$('#gritter-sticky').on(ace.click_event, function(){
+					var unique_id = $.gritter.add({
+						title: 'This is a sticky notice!',
+						text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="red">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+						image: $path_assets+'/avatars/avatar.png',
+						sticky: true,
+						time: '',
+						class_name: 'gritter-info' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+					});
+			
+					return false;
+				});
+			
+			
+				$('#gritter-without-image').on(ace.click_event, function(){
+					$.gritter.add({
+						// (string | mandatory) the heading of the notification
+						title: 'This is a notice without an image!',
+						// (string | mandatory) the text inside the notification
+						text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="orange">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+						class_name: 'gritter-success' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+					});
+			
+					return false;
+				});
+			
+			
+				$('#gritter-max3').on(ace.click_event, function(){
+					$.gritter.add({
+						title: 'This is a notice with a max of 3 on screen at one time!',
+						text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="green">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+						image: $path_assets+'/avatars/avatar3.png',
+						sticky: false,
+						before_open: function(){
+							if($('.gritter-item-wrapper').length >= 3)
+							{
+								return false;
+							}
+						},
+						class_name: 'gritter-warning' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+					});
+			
+					return false;
+				});
+			
+			
+				$('#gritter-center').on(ace.click_event, function(){
+					$.gritter.add({
+						title: 'This is a centered notification',
+						text: 'Just add a "gritter-center" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+						class_name: 'gritter-info gritter-center' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+					});
+			
+					return false;
+				});
+				
+				$('#gritter-error').on(ace.click_event, function(){
+					$.gritter.add({
+						title: 'This is a warning notification',
+						text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+						class_name: 'gritter-error' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+					});
+			
+					return false;
+				});
+					
+			
+				$("#gritter-remove").on(ace.click_event, function(){
+					$.gritter.removeAll();
+					return false;
+				});
+					
+			
+				///////
+			
+			
+				$("#bootbox-regular").on(ace.click_event, function() {
+					bootbox.prompt("What is your name?", function(result) {
+						if (result === null) {
+							//Example.show("Prompt dismissed");
+						} else {
+							//Example.show("Hi <b>"+result+"</b>");
+						}
+					});
+				});
+					
+				$("#bootbox-confirm").on(ace.click_event, function() {
+					bootbox.confirm("Are you sure?", function(result) {
+						if(result) {
+							//
+						}
+					});
+				});
+					
+				$("#bootbox-options").on(ace.click_event, function() {
+					bootbox.dialog({
+						message: "<span class='bigger-110'>I am a custom dialog with smaller buttons</span>",
+						buttons: 			
+						{
+							"success" :
+							 {
+								"label" : "<i class='icon-ok'></i> Success!",
+								"className" : "btn-sm btn-success",
+								"callback": function() {
+									//Example.show("great success");
+								}
+							},
+							"danger" :
+							{
+								"label" : "Danger!",
+								"className" : "btn-sm btn-danger",
+								"callback": function() {
+									//Example.show("uh oh, look out!");
+								}
+							}, 
+							"click" :
+							{
+								"label" : "Click ME!",
+								"className" : "btn-sm btn-primary",
+								"callback": function() {
+									//Example.show("Primary button");
+								}
+							}, 
+							"button" :
+							{
+								"label" : "Just a button...",
+								"className" : "btn-sm"
+							}
+						}
+					});
+				});
+			
+			
+			
+				$('#spinner-opts small').css({display:'inline-block', width:'60px'})
+			
+				var slide_styles = ['', 'green','red','purple','orange', 'dark'];
+				var ii = 0;
+				$("#spinner-opts input[type=text]").each(function() {
+					var $this = $(this);
+					$this.hide().after('<span />');
+					$this.next().addClass('ui-slider-small').
+					addClass("inline ui-slider-"+slide_styles[ii++ % slide_styles.length]).
+					css({'width':'125px'}).slider({
+						value:parseInt($this.val()),
+						range: "min",
+						animate:true,
+						min: parseInt($this.data('min')),
+						max: parseInt($this.data('max')),
+						step: parseFloat($this.data('step')),
+						slide: function( event, ui ) {
+							$this.attr('value', ui.value);
+							spinner_update();
+						}
+					});
+				});
+			
+			
+			
+			
+			
+				$.fn.spin = function(opts) {
+					this.each(function() {
+					  var $this = $(this),
+						  data = $this.data();
+			
+					  if (data.spinner) {
+						data.spinner.stop();
+						delete data.spinner;
+					  }
+					  if (opts !== false) {
+						data.spinner = new Spinner($.extend({color: $this.css('color')}, opts)).spin(this);
+					  }
+					});
+					return this;
+				};
+			
+				function spinner_update() {
+					var opts = {};
+					$('#spinner-opts input[type=text]').each(function() {
+						opts[this.name] = parseFloat(this.value);
+					});
+					$('#spinner-preview').spin(opts);
+				}
+			
+			
+			
+				$('#id-pills-stacked').removeAttr('checked').on('click', function(){
+					$('.nav-pills').toggleClass('nav-stacked');
+				});
+			
+			
+			});
+		</script>
+	</body>
+</html>
